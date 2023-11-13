@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" x-data="{menuIsOpen: false}">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,7 +16,7 @@
     
     <h2>Lorem, ipsum.</h2>
     <p>
-      <nav>
+      <nav id="mainNav" x-show="menuIsopen"></nav>
         <ul>
           <li><a href="#">Lorem, ipsum.</a></li>
           <li><a href="#">Inventore, asperiores?</a></li>
