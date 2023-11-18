@@ -19,31 +19,28 @@
           overflow: hidden;
         }
   
-      </style>
-<body>
-    <header class="header header--atTop">
-        <button class="header__menuBtn menuBurger" :aria-expanded="menuIsOpen" aria-controls="mainNav"
-            @pointerdown="menuIsOpen = !menuIsOpen">
-            menu
-        </button>
+    </style>
+    <body>
+        <header class="header header--atTop">
+            <button class="header__menuBtn menuBurger" :aria-expanded="menuIsOpen" aria-controls="mainNav"
+                @pointerdown="menuIsOpen = !menuIsOpen">
+                menu
+            </button>
 
-        <h1>Page des chats</h1>
-        
-        <nav id="mainNav" class="header__menu menu" aria-label="Menu principal" x-show="menuIsOpen" x-transition.duration.800ms
-        class="menu"
-        >
-            <ul class="menu__list">
-                <li class="menu__item">
-                    
-                    <a class="menu__link" href="../Cats/chat 1.html">Chat Brun </a>
-                </li>
-                <br>
-                <li class="menu__item">
-                    <a class="menu__link" href="../Cats/chat 2.html">Chat Roux</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-</body>
+            <h1>Page des chats</h1>
+            
+            <nav id="mainNav" class="header__menu menu" aria-label="Menu principal" x-show="menuIsOpen" x-transition>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="../Cats/chat 1.html">Chat Brun</a>
+                    </li>
+                    <br>
+                    <li class="menu__item">
+                        <a class="menu__link" href="../Cats/chat 2.html">Chat Roux</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </body>
 
 </html>

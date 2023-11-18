@@ -3,7 +3,7 @@
         .menu{
           position: fixed;
           top: 0;
-          left: 0;
+          left: -10;
           width: 5vw;
           height: 20vh;
           background: #ffffff00;
@@ -21,26 +21,27 @@
   
       </style>
 <body>
-    <header class="header header--atTop">
-        <button class="header__menuBtn menuBurger" :aria-expanded="menuIsOpen" aria-controls="mainNav"
-            @pointerdown="menuIsOpen = !menuIsOpen">
-            menu
-        </button>
+    
+        <header class="header header--atTop">
+            <button class="header__menuBtn menuBurger" :aria-expanded="menuIsOpen" aria-controls="mainNav"
+                @pointerdown="menuIsOpen = !menuIsOpen" href="../index.html">
+                menu
+            </button>
 
-        <h1>Page des chiens</h1>
+            <h1>Page des chiens</h1>
 
-        <nav id="mainNav" class="header__menu menu" aria-label="Menu principal" x-show="menuIsOpen" x-transition>
-            <ul class="menu__list">
-                <li class="menu__item">
-                    <a class="menu__link" href="../Dogs/Dogs 1.html">Chien Brun</a>
-                </li>
-                <br>
-                <li class="menu__item">
-                    <a class="menu__link" href="../Dogs/Dogs 2.html">Chien Blanc</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-</body>
+            <nav id="mainNav" class="header__menu menu" aria-label="Menu principal" x-show="menuIsOpen" x-transition>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="../Dogs/Dogs 1.html">Chien Brun</a>
+                    </li>
+                    <br>
+                    <li class="menu__item">
+                        <a class="menu__link" href="../Dogs/Dogs 2.html">Chien Blanc</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </body>
 
-</html>
+    </html>
